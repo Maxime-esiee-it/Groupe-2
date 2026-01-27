@@ -1,2 +1,2 @@
 # Groupe-2
-Aymane, Nassim, Maxime, Enzo, Hugo
+Ay, Nassim, Maxime, Enzo, Hugo
