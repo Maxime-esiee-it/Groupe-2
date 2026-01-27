@@ -1,2 +1,2 @@
 # Groupe-2
-Aya nakamura, Nassim, Maxime, Enzo, Hugo
+Aymane EL PIPI, Nassim, Maxime, Enzo, Hugo
