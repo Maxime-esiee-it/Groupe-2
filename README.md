@@ -1,2 +1,2 @@
 # Groupe-2
-Ay, Nassim, Maxime, Enzo, Hugo
+Aya nakamura, Nassim, Maxime, Enzo, Hugo
