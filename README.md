@@ -1,2 +1,2 @@
 # Groupe-2
-Aymane, Nassime, Maximee, Enzoe, Hugoe
+Ayman, Nassim, Maxime, Enzo, Hugo
