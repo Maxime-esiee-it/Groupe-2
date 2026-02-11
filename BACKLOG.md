@@ -37,9 +37,8 @@ Feature: Création de tâche
 Feature: Modifié une tâche
   Scenario: L'utilisateur modifie une tâche
     Given L'utilisateur veut modifié une tache qui est créer
-    When Il clique sur l’icône "✔"
-    Then La tâche change de statut à "terminée"
-    And Elle est affichée barrée ou dans la section "Terminées"
+    When Il clique sur "mofifié"
+    And La tâche est modifié
 
 ## US-03 Marquer une tâche comme terminée
 
