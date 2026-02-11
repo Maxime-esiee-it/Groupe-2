@@ -1,7 +1,7 @@
-\# Backlog MVP - Projet SI Java
+# Backlog MVP - Projet SI Java
 
 
-\# projet du groupe :
+# projet du groupe :
 Le projet a pour but de creer une application/site de gestion de taches avec un calendrier.
 
 User story :
@@ -22,7 +22,7 @@ En tant qu’utilisateur,
 je veux supprimer une tâche,
 pour garder ma liste propre.
 
-\## US- Créer une tache
+## US- Créer une tache
 
 Feature: Création de tâche
   Scenario: L'utilisateur crée une nouvelle tâche
@@ -33,7 +33,7 @@ Feature: Création de tâche
     Then La tâche apparaît dans la liste de ses tâches
     And Un message "Tâche créée" s'affiche
 
-\## US- Marquer une tâche comme terminée
+## US- Marquer une tâche comme terminée
 
 Feature: Compléter une tâche
   Scenario: L'utilisateur coche une tâche
@@ -42,7 +42,7 @@ Feature: Compléter une tâche
     Then La tâche change de statut à "terminée"
     And Elle est affichée barrée ou dans la section "Terminées"
 
-\## US- BackEnd
+## US- BackEnd
 
 Créer projet Spring Boot
  Configurer base de données (MySQL)
@@ -57,7 +57,7 @@ Créer projet Spring Boot
  Ajouter validation (Bean Validation)
  Tests unitaires (JUnit, Mockito)
 
-\## US- FrontEnd
+## US- FrontEnd
 
  Création du projet (Vite / React / Angular / autre)
  Créer les pages : Login, Register, Dashboard, Liste des tâches
@@ -66,33 +66,22 @@ Créer projet Spring Boot
  Gestion des erreurs
  Interface responsive
 
-\## US-01 Init
+## US-01 Init
+=======
+# Backlog MVP - Projet SI Java
+>>>>>>> ace978f20c221aa4b18516b233dc3b3320639173
 
+## US-01 Init
 Initialisation du projet Java et GitHub
 
-
-
-\## US-02 Register
-
+## US-02 Register
 Création d’un utilisateur
 
-
-
-\## US-03 Login
-
+## US-03 Login
 Connexion d’un utilisateur
 
-
-
-\## US-04 CRUD Project
-
+## US-04 CRUD Project
 Créer / Lire / Mettre à jour / Supprimer un projet
 
-
-
-\## US-05 CRUD Task
-
+## US-05 CRUD Task
 Créer / Lire / Mettre à jour / Supprimer une tâche
-
-
-
