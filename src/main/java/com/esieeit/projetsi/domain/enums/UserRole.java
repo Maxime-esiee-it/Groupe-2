@@ -1,4 +1,4 @@
-package main.java.com.esieeit.projetsi.domain.enums;
+package com.esieeit.projetsi.domain.enums;
 
 public enum UserRole {
     USER,
