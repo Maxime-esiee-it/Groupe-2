@@ -24,4 +24,9 @@ public class Project {
     public List<Task> getTasks() {
         return new ArrayList<>(tasks);
     }
+
+    // Getters
+    public String getName() { return name; }
+    public String getDescription() { return description; }
+    public User getOwner() { return owner; }
 }

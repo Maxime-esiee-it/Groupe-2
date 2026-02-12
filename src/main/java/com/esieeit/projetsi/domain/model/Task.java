@@ -18,6 +18,10 @@ public class Task {
         project.addTask(this);
     }
 
+    // Getters ajoutés pour Demo.java
+    public String getTitle() { return title; }
+    public String getDescription() { return description; }
+    public Project getProject() { return project; }
     public TaskStatus getStatus() { return status; }
 
     public void start() {
@@ -28,15 +32,13 @@ public class Task {
 
     public void complete() {
         if (status != TaskStatus.IN_PROGRESS)
-            throw new BusinessRuleException(
-                    "Transition interdite: complete() possible uniquement depuis IN_PROGRESS");
+            throw new BusinessRuleException("Transition interdite: complete() possible uniquement depuis IN_PROGRESS");
         status = TaskStatus.DONE;
     }
 
     public void archive() {
         if (status != TaskStatus.DONE)
-            throw new BusinessRuleException(
-                    "Transition interdite: archive() possible uniquement depuis DONE");
+            throw new BusinessRuleException("Transition interdite: archive() possible uniquement depuis DONE");
         status = TaskStatus.ARCHIVED;
     }
 }
