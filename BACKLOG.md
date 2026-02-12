@@ -4,7 +4,7 @@
 # projet du groupe :
 Le projet a pour but de creer une application/site de gestion de taches avec un calendrier.
 
-User story :
+## US-01 User story :
 
 En tant qu’utilisateur,
 je veux ajouter une nouvelle tâche,
@@ -22,7 +22,7 @@ En tant qu’utilisateur,
 je veux supprimer une tâche,
 pour garder ma liste propre.
 
-## US- Créer une tache
+## US-02 Créer une tâche
 
 Feature: Création de tâche
   Scenario: L'utilisateur crée une nouvelle tâche
@@ -33,7 +33,14 @@ Feature: Création de tâche
     Then La tâche apparaît dans la liste de ses tâches
     And Un message "Tâche créée" s'affiche
 
-## US- Marquer une tâche comme terminée
+## US- Modifié une tâche deja créer
+Feature: Modifié une tâche
+  Scenario: L'utilisateur modifie une tâche
+    Given L'utilisateur veut modifié une tache qui est créer
+    When Il clique sur "mofifié"
+    And La tâche est modifié
+
+## US-03 Marquer une tâche comme terminée
 
 Feature: Compléter une tâche
   Scenario: L'utilisateur coche une tâche
@@ -42,7 +49,7 @@ Feature: Compléter une tâche
     Then La tâche change de statut à "terminée"
     And Elle est affichée barrée ou dans la section "Terminées"
 
-## US- BackEnd
+## US-04 BackEnd
 
 Créer projet Spring Boot
  Configurer base de données (MySQL)
@@ -57,7 +64,7 @@ Créer projet Spring Boot
  Ajouter validation (Bean Validation)
  Tests unitaires (JUnit, Mockito)
 
-## US- FrontEnd
+## US-05 FrontEnd
 
  Création du projet (Vite / React / Angular / autre)
  Créer les pages : Login, Register, Dashboard, Liste des tâches
@@ -66,22 +73,21 @@ Créer projet Spring Boot
  Gestion des erreurs
  Interface responsive
 
-## US-01 Init
 =======
 # Backlog MVP - Projet SI Java
 >>>>>>> ace978f20c221aa4b18516b233dc3b3320639173
 
-## US-01 Init
+## US-06 Init
 Initialisation du projet Java et GitHub
 
-## US-02 Register
+## US-07 Register
 Création d’un utilisateur
 
-## US-03 Login
+## US-08 Login
 Connexion d’un utilisateur
 
-## US-04 CRUD Project
+## US-09 CRUD Project
 Créer / Lire / Mettre à jour / Supprimer un projet
 
-## US-05 CRUD Task
+## US-10 CRUD Task
 Créer / Lire / Mettre à jour / Supprimer une tâche
