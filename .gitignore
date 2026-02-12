@@ -22,5 +22,8 @@ build/
 .env
 *.pem
 *.key
+<<<<<<< HEAD
 
 oracleJdk-25/
+=======
+>>>>>>> fd8c889266f41a4b0da2190645e3b8cf14e5ba5f
