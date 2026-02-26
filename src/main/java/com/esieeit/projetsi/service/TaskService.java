@@ -8,6 +8,7 @@ import com.esieeit.projetsi.api.dto.TaskCreateRequest;
 import com.esieeit.projetsi.api.dto.TaskUpdateRequest;
 import com.esieeit.projetsi.domain.enums.TaskStatus;
 import com.esieeit.projetsi.domain.exception.BusinessRuleException;
+import com.esieeit.projetsi.domain.exception.ResourceNotFoundException;
 import com.esieeit.projetsi.domain.model.Task;
 import com.esieeit.projetsi.domain.validation.Validators;
 import com.esieeit.projetsi.repository.TaskRepository;
@@ -42,7 +43,8 @@ public class TaskService {
         Validators.requireNonNull(id, "id");
 
         return taskRepository.findById(id)
-                .orElseThrow(() -> new BusinessRuleException("Task introuvable : " + id));
+                .orElseThrow(() ->
+                        new ResourceNotFoundException("Task introuvable : " + id));
     }
 
     public Task update(Long id, TaskUpdateRequest req) {
@@ -54,11 +56,17 @@ public class TaskService {
         if (req.getTitle() != null) {
             task.setTitle(req.getTitle());
         }
+
         if (req.getDescription() != null) {
             task.setDescription(req.getDescription());
         }
+
         if (req.getStatus() != null) {
-            task.setStatus(TaskStatus.valueOf(req.getStatus()));
+            try {
+                task.setStatus(TaskStatus.valueOf(req.getStatus()));
+            } catch (IllegalArgumentException e) {
+                throw new BusinessRuleException("Statut invalide : " + req.getStatus());
+            }
         }
 
         return taskRepository.save(task);
@@ -66,7 +74,7 @@ public class TaskService {
 
     public void delete(Long id) {
         if (!taskRepository.existsById(id)) {
-            throw new BusinessRuleException("Task introuvable : " + id);
+            throw new ResourceNotFoundException("Task introuvable : " + id);
         }
         taskRepository.deleteById(id);
     }
