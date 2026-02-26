@@ -29,10 +29,15 @@ Projet SI en Java : construire une API backend propre, structurée, documentée 
 
 ## Installation
 
+-Java
+-Spring Bgit
+-Base de donnée
+
 ### Prérequis
 
 - Java 17/21
 - Git
+-Docker
 
 ### Cloner
 
