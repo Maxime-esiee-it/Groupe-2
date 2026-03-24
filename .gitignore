@@ -8,9 +8,14 @@ Thumbs.db
 out/
 .vscode/
 
-# === Gradle ===
-.gradle/
-build/
+# === Maven ===
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
 
 # === Java ===
 *.class
@@ -22,5 +27,3 @@ build/
 .env
 *.pem
 *.key
-
-oracleJdk-25/
