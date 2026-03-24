@@ -14,11 +14,11 @@ Projet SI en Java : construire une API backend propre, structurée, documentée 
 
 ## Équipe
 
-- HAMZA Nassim - rôle (PO / Lead Dev / Dev / QA)
-- Marco Enzo - rôle
-- Maxime Clement - rôle
-- EL Feddi Aymane
-- LAJEUNE Hugo-lajeune
+- HAMZA Nassim - rôle : Dev
+- Marco Enzo - rôle :  Lead Dev
+- Maxime Clement - rôle : Dev
+- EL Feddi Aymane -rôle : PO
+- LAJEUNE Hugo -rôle : QA
 
 ## Stack
 
@@ -29,10 +29,15 @@ Projet SI en Java : construire une API backend propre, structurée, documentée 
 
 ## Installation
 
+-Java
+-Spring Bgit
+-Base de donnée
+
 ### Prérequis
 
 - Java 17/21
 - Git
+-Docker
 
 ### Cloner
 
