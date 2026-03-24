@@ -27,3 +27,5 @@ dependency-reduced-pom.xml
 .env
 *.pem
 *.key
+
+oracleJdk-25/
