@@ -20,7 +20,7 @@ pour savoir ce qui est fait et ce qui reste.
 
 En tant qu’utilisateur,
 je veux supprimer une tâche,
-pour garder ma liste propre.
+pour garder des listes propres.
 
 ## US-02 Créer une tâche
 
