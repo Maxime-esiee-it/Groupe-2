@@ -23,21 +23,21 @@ Projet SI en Java : construire une API backend propre, structurée, documentée 
 ## Stack
 
 - Java 17/21
-- Gradle (wrapper)
+- Maeven
 - JUnit 5
-- (à venir) Spring Boot, DB, Docker
+- Spring Boot, DB, Docker
 
 ## Installation
 
 -Java
--Spring Bgit
+-Spring Git
 -Base de donnée
 
 ### Prérequis
 
 - Java 17/21
 - Git
--Docker
+- Docker
 
 ### Cloner
 
@@ -64,7 +64,7 @@ cd <repo>
 
 - **main** : stable
 - **develop** : intégration
-- **feature/*** : 1 user story = 1 branche
+- **feature/** : 1 user story = 1 branche
 - PR obligatoire vers develop
 
 ## Backlog
