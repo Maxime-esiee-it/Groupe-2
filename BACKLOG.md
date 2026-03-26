@@ -24,30 +24,30 @@ pour garder des listes propres.
 
 ## US-02 Créer une tâche
 
-Feature: Création de tâche
+Fonctionnalité: Création de tâche
   Scenario: L'utilisateur crée une nouvelle tâche
-    Given L'utilisateur est connecté
-    And Il est sur la page "Créer une tâche"
-    When Il saisit un titre et une description
-    And Il clique sur "Créer"
-    Then La tâche apparaît dans la liste de ses tâches
-    And Un message "Tâche créée" s'affiche
+    L'utilisateur est connecté
+    Il est sur la page "Créer une tâche"
+    Il saisit un titre et une description
+    Il clique sur "Créer"
+    La tâche apparaît dans la liste de ses tâches
+    Un message "Tâche créée" s'affiche
 
 ## US- Modifié une tâche deja créer
-Feature: Modifié une tâche
+Fonctionnalité: Modifié une tâche
   Scenario: L'utilisateur modifie une tâche
-    Given L'utilisateur veut modifié une tache qui est créer
-    When Il clique sur "mofifié"
-    And La tâche est modifié
+    L'utilisateur veut modifié une tache qui est créer
+    Il clique sur "mofifié"
+    La tâche est modifié
 
 ## US-03 Marquer une tâche comme terminée
 
-Feature: Compléter une tâche
+Fonctionnalité: Compléter une tâche
   Scenario: L'utilisateur coche une tâche
-    Given L'utilisateur voit une tâche non terminée
-    When Il clique sur l’icône "✔"
-    Then La tâche change de statut à "terminée"
-    And Elle est affichée barrée ou dans la section "Terminées"
+    L'utilisateur voit une tâche non terminée
+    Il clique sur l’icône "✔"
+    La tâche change de statut à "terminée"
+    Elle est affichée barrée ou dans la section "Terminées"
 
 ## US-04 BackEnd
 
@@ -57,7 +57,7 @@ Créer projet Spring Boot
  Créer entité User
  Créer entité Task
  Créer entité Project (optionnel)
- Créer Repositories
+ Créer Repertoire
  Créer Services
  Créer Controllers (API REST)
  Implémenter la sécurité (Spring Security + JWT)
