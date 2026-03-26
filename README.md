@@ -8,7 +8,7 @@ Projet SI en Java : construire une API backend propre, structurée, documentée 
 
 - Mettre en place un dépôt Git propre (main/develop/feature)
 - Implémenter un MVP (auth + gestion de ressources métier)
-- Respecter une architecture claire (controller/service/repository)
+- Respecter une architecture claire (controleur/service/repository)
 - Ajouter des tests unitaires
 - Produire une documentation exploitable (README + backlog)
 
